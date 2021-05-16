@@ -22,8 +22,8 @@ response = requests.get(HOST, headers=headers)
 chrome_options = webdriver.ChromeOptions()
 # директория сохранения профиля
 chrome_options.add_argument("--user-data-dir=C:/Users/galya/PycharmProjects/pythonProject11")
-dcap = dict(DesiredCapabilities.CHROME)
-chrome = webdriver.Chrome('D:\\chromedriver.exe')
+#dcap = dict(DesiredCapabilities.CHROME)
+chrome = webdriver.Chrome('D:\\chromedriver\\chromedriver.exe')
 
 chrome.get(HOST)
 times = []
@@ -64,7 +64,7 @@ def main():
     add_all_links_recursive(HOST + '/')
     for link in links:
         start = time()
-        result = requests.get(link)
+        result = chrome.get(link)
         end = time()
         urls.append(link)
         times.append(end - start)
@@ -75,6 +75,11 @@ def main():
     pd.options.display.max_rows = 10000
     df = pd.DataFrame({'URL': urls, 'Time of open, sec': times})
     print(df)
+    writer = pd.ExcelWriter('C:/Users/galya/Desktop/Data parsing/testing.xlsx')
+    df.to_excel(writer, 'Лист1')
+    writer.save()
+    print(" Домены с временем их открытия выгружены в таблицу Excel в папке Data parsing.")
+
 
 if __name__ == '__main__':
     main()
