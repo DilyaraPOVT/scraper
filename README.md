@@ -7,6 +7,6 @@
 ***
 Результаты работы программы
 
-![Альтернативный текст](/parcer1.png "kk")
+![Альтернативный текст](/parcer1.png)
 
-![Выгрузка в Excel](/Excel_parcer.png "kh")
+![Выгрузка в Excel](/Excel_parcer.png)
