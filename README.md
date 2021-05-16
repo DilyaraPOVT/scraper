@@ -7,6 +7,6 @@
 ***
 Результаты работы программы
 
-![Альтернативный текст](/Users/galya/Desktop/Data parsing/parcer1.png "kk")
+![Альтернативный текст](/parcer1.png "kk")
 
-![Выгрузка в Excel](C:/Users/galya/Desktop/Data parsing/Excel_parcer.png "kh")
+![Выгрузка в Excel](/Excel_parcer.png "kh")
