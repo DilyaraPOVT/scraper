@@ -8,4 +8,5 @@
 Результаты работы программы
 
 ![Ссылки](C:/Users/galya/Desktop/Data parsing/parcer1.png)
+
 ![Выгрузка в Excel](C:/Users/galya/Desktop/Data parsing/Excel_parcer.png)
